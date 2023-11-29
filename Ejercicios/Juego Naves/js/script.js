@@ -676,18 +676,22 @@ function cambiarInterfazBatalla(imgGate){
 }
 function insertarAlienInterfaz(alien){
     const alienDataDiv = document.createElement('div');
-    alienDataDiv.classList.add('classBody');
-    const alienName = document.createElement('p');
+    alienDataDiv.classList.add('body-data');
+    const alienName = document.createElement('div');
     alienName.textContent = "Nombre: "+ alien.name;
-    const alienType = document.createElement('p');
-    alienType.textContent = "Raza: "+ alien.type;
-    const alienHP = document.createElement('p');
-    alienHP.textContent = "HP: "+ alien.hp;
-
-    alienDataDiv.appendChild(alienName);
-    alienDataDiv.appendChild(alienType);
-    alienDataDiv.appendChild(alienHP);
+    const div = document.createElement('div');
+    const span = document.createElement('div');
+    span.style.display = 'inline-block';
+    span.textContent = "HP: "
+    const alienHP = document.createElement('meter');
+    alienHP.max = levelManager.maxHP;
+    alienHP.value = alien.hp;
     
+    div.appendChild(span);
+    div.appendChild(alienHP);
+    alienDataDiv.appendChild(alienName);
+    // alienDataDiv.appendChild(alienType);
+    alienDataDiv.appendChild(div);
     alienDiv.appendChild(alienDataDiv);
 }
 
@@ -733,8 +737,17 @@ function showLevelInterfaz(){
     const divBodyData = document.createElement('div');
     divBodyData.className = 'body-data';
     const p = document.createElement('p');
-    p.textContent = "Estas en el nivel: "+levelManager.getCurrentLevel().number;
+    p.textContent = "Nivel Actual: "+levelManager.getCurrentLevel().number;
+
+    const numEnemys = document.createElement('p');
+    numEnemys.textContent = "Num Enemigos: "+levelManager.getCurrentLevel().numEnemys;
+
+    const dmgMulti = document.createElement('p');
+    dmgMulti.textContent = "Multiplicador dmg: "+levelManager.getCurrentLevel().damageMultiplier;
+
     divBodyData.appendChild(p);
+    divBodyData.appendChild(numEnemys);
+    divBodyData.appendChild(dmgMulti);
     levelDiv.appendChild(divBodyData);
     
 }
@@ -750,7 +763,8 @@ function startBattle(){
         alien.crearAlien();
         alien.moveInterva();
         aliens.push(alien);
-        insertarAlienInterfaz(alien);
+        levelManager.maxHP = alien.hp;
+        //insertarAlienInterfaz(alien);
     }
 }
 function checkStatusBattle(){
@@ -844,6 +858,7 @@ function batallaRandom(imgGate){
         const modal = document.querySelector('.modal');
         console.log(modal);
         modal.parentNode.removeChild(modal);
+        ocultarTodasLasInterfaces();
         cambiarInterfazBatalla(imgGate);
     }
     buttonCancel.onclick =deleteModal;

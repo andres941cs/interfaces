@@ -12,6 +12,7 @@ class LevelManager {
     constructor() {
         this.levels = [];
         this.currentLevelIndex = 0;
+        this.maxHP ="";//MODIFICAR
     }
 
      // Agregar un nuevo nivel al gestor
