@@ -662,7 +662,7 @@ function cambiarInterfazBatalla(imgGate){
     // Esperar a que termine la animación en el primer elemento
     interfaz.addEventListener('animationend', function() {
         agregarYEliminarClase(interfaz,'puff-in-center');
-        interfaz.style.backgroundImage = "url('../img/fondoCombate.png')";
+        interfaz.style.backgroundImage = "url('img/fondoCombate.png')";
         explorationScreen.style.display = "none";
         gameScreen.style.display = "block";
     }, { once: true });
@@ -802,8 +802,6 @@ const interfaces = document.getElementById("interfaces");
 agregarAnimacion(interfaces,'tilt-in-fwd-tr');
 //agregarYEliminarClase(interfaces,'tilt-in-fwd-tr');
 //interfaces.classList.add('tilt-in-fwd-tr');
-//   agregarYEliminarClase(imgGate,'animated');
-//   agregarYEliminarClase(imgGate,'zoomOut');
 
 function animacionInterfaz()
 {
