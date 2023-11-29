@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'trebuchet ms', arial, sans-serif;
+}
+#header
+{
+    background-color: #000;
+    border-bottom: 1px solid #3d3d3d;
+    padding: 0px 35px 0px 35px;
+}
+#logo_text
+{
+    background-color: #1d1d1d;
+}
+h1 a
+{
+    font-family: 'century gothic', arial;
+    color: #fff;
+    text-decoration: none;
+}
+h2
+{
+    color:#a5958d;
+}
+
+h4
+{
+    color: #ad9fa3;
+}
+
+ul
+{
+    list-style-image: url("/img/bullet.png");
+}
+ul a
+{
+    color: #ad9fa3;
+}
+#menu
+{
+    background-color: #2d2d2d;
+    list-style: none;
+    /*display: none;*/
+    padding: 10px 30px 10px 30px;
+    
+}
+
+#menu li
+{
+    background-color: #5e4237;
+    text-align: center;
+    padding: 20px;
+}
+#menu li:hover
+{
+    background-color: #160f0c;
+}
+#menu a
+{
+    color: #fff;
+    text-decoration: none;
+}
+#banner
+{
+    background: transparent url("/img/banner.jpg"); border: 10px solid #DDD;
+    height: 180px;
+    margin: 0 10px 10px 10px;
+}
+
+/*
+height: 180px;
+    width: 860px;
+    margin: auto;
+*/
+/*#site_content*/
+
+.sidebar_item
+{
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#footer
+{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+#site_content
+{
+    padding: 20px;
+}
+
+sidebar_item
+{
+    margin: 5px;
+}
+h1,h2,h5
+{
+    padding: 10px 30px 0 30px;
+}
+h2{
+    margin-bottom: 15px;
+}
+#sidebar_container > div:nth-child(2) > div.sidebar_item > ul{
+    padding-bottom: 30px;
+}
+h4{
+    padding: 0 30px 0 30px;
+}
+p,h3
+{
+    padding: 25px;
+}
+.sidebar
+{
+    margin-bottom: 30px;
+}
+
+#content > ul:nth-child(3)
+{
+    margin-bottom: 30px;
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #menu li{
+        display: inline-block;
+        padding: 10px 20px 10px 20px;
+    }
+
+    #menu {
+    align-items: end;
+    justify-content: end;
+    text-align: right;
+    padding: 10px 0px 10px 0px;
+    width: 900px;
+    margin: 0 auto;
+    }
+    #logo
+    {
+        width: 900px;
+        margin: 0 auto;
+    }
+    #menu_bar
+    {
+        width: 900px;
+        margin: 0 auto;
+    }
+    #header_content
+    {
+        width: 900px; margin: 0 auto;
+    }
+    #site_content
+    { 
+        width: 900px;
+        margin: 0 auto;
+    }
+    #content
+    {
+        float: right;
+        width: 70%;
+    }
+
+    #sidebar_container
+    {
+        float: left;
+        width: 30%;
+    }
+    #content_footer
+    {
+        clear: both;
+    }
+    #footer
+    {
+        height: 100px;
+    }
+    h4{
+        padding: 0 30px 0 30px;
+    }
+}

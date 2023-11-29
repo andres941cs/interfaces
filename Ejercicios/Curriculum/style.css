@@ -1,0 +1,45 @@
+
+@font-face {
+    font-family: 'Sole Sans';
+    src: local('Sole Sans Regular'), local('Sole-Sans-Regular'),
+        url('fuentes/SoleSans-Regular.woff2') format('woff2'),
+        url('fuentes/SoleSans-Regular.woff') format('woff'),
+        url('fuentes/SoleSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  *{
+    font-family: 'Sole Sans';
+    margin: 0;
+    padding: 0;
+  }
+
+  .size
+  {
+    font-size: 5pt;
+    /* Borrar el borde despues */
+    border: none;
+
+  }
+  ul
+  {
+    list-style-type: none;
+  }
+
+  h1
+  {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  h2
+  {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .page
+    {
+      max-width: 800px !important;
+    }
+  }
+ 

@@ -1,0 +1,44 @@
+#carta
+{
+    width: 330px;
+    transition: all 0.5s;
+}
+
+#carta_anverso
+{
+    background-image: url(img/carta_mew.jpg);
+    height: 460px;
+    width: 330px;
+    position: absolute;
+    z-index: 0;
+    transition: all 0.5s;
+}
+
+#carta_reverso
+{
+    background-image: url(img/carta_reverso.jpg);
+    height: 460px;
+    width: 330px;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.5s;
+}
+/* HOVER */
+
+#carta:hover > div{
+    transform: rotateY(180deg);
+  }
+  #carta:hover #carta_anverso{
+    z-index: 10;
+  }
+  #carta:hover #carta_reverso{
+    z-index: 0;
+  }
+/**/
+.card_img{
+    border-bottom-left-radius: 4.25% 3%;
+    border-bottom-right-radius: 4.25% 3%;
+    border-top-left-radius: 4.35% 3%;
+    border-top-right-radius: 4.25% 3%;
+    overflow: hidden;
+}

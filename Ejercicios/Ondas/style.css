@@ -1,0 +1,55 @@
+body
+{
+    background-image: url(mar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.circulo
+{
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 800px;
+    width: 800px;
+    position: fixed;
+    animation: gota 4s 0.4s infinite;
+}
+.circulo2
+{
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 800px;
+    width: 800px;
+    position: fixed;
+    animation: gota 4s 0.8s infinite;
+}
+.circulo3
+{
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 800px;
+    width: 800px;
+    position: fixed;
+    animation: gota 4s 1.2s infinite;
+}
+.circulo4
+{
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 800px;
+    width: 800px;
+    position: fixed;
+    animation: gota 4s 0.4s infinite;
+}
+@keyframes gota {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        scale: 6;
+    }
+}

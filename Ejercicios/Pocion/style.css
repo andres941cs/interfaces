@@ -1,0 +1,90 @@
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
+
+    
+    .agua{
+        position: absolute;
+        width: 10px;
+        top: 152px;
+        left: 412px;
+        height: 45px;
+        border-radius: 10px;
+        opacity: 0;
+        background-color: #02a0d4;
+        animation: echarAgua 10s 3s forwards;
+        transform-origin: bottom;
+    }
+    
+    
+    @keyframes caidaAgua {
+        to {
+            height: 100%;
+          }
+    }
+   
+    @keyframes girar {
+        0%{
+            
+        }
+        100%{
+            transform: rotate(50deg);
+            
+        }
+    }
+
+    @keyframes echarAgua {
+
+        50%{
+            opacity: 1;
+            height: 130px;
+        }
+        100% {
+            height: 0;
+          }
+    }
+
+    #vaso
+    {
+        position: relative;
+        left: -130px;
+        top: 200px;
+        left: 383px;
+        width: 100px;
+        height: 100px;
+        background-image: url(img/vaso.png);
+        background-size: contain;
+    }
+    .divJarron{
+        position: absolute;
+        left: 81px;
+        width: 250px;
+        height: 250px;
+        background-image: url(img/jarron.png);
+        background-size: contain;
+        animation: girar 5s normal forwards;
+        transform-origin: bottom;
+    }
+    @keyframes llenarVaso {
+        from{
+            opacity: 0;
+        }
+        to {
+            height: 84px;
+            opacity: 1;
+          }
+    }
+
+    .aguaVaso
+    {
+        position: absolute;
+        left: 17px;
+        height: 84px;
+        width: 58px;
+        bottom: 6px;
+        height: 0;/*84px*/
+        animation: llenarVaso 8s 4s forwards;
+        transform-origin: bottom;
+    }

@@ -1,0 +1,98 @@
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fila1
+{
+    display: flex;
+    align-items: center;
+}
+#capa5
+{
+    margin-top: 45px;
+}
+#capa2
+{
+    margin-top: 34px;/*16px*/
+    background: url('img/Capa\ 2.png') no-repeat;
+    width: 302px;
+    height: 584px;
+}
+
+#capa6
+{
+    margin-top: -29px;
+    margin-left: 11px;
+    transform-origin: right top;
+}
+
+#capa3
+{
+    position: absolute;
+    margin-top: -69px;
+    margin-left: 39px;
+}
+
+#capa4
+{
+    margin-top: -42px;
+    margin-left: 186px;
+    transform-origin: left bottom;
+}
+
+/* :hover
+1º Viñeta - que duplique su tamaño desde el mismo sitio rapido despacio rapido
+2º Viñeta - Que desaparezca despacio rapido 2s
+3º Viñeta - Se mueva a la derecha ,despuesde un segundo cambiar la imagen 4s
+4º Viñeta - Disminuya el tamaño hacia la esquina superior derecha 2s hasta el tamaño minimo
+5º Viñeta -  girar a la izquierda hasta que quede del reves lentamente durante 3s
+6º Viñeta -  
+Viñetas 5-6 -> aumento tamaño desde origen centro 1.2 
+*/
+/* Viñeta 1 */
+#capa5:hover
+{
+    transition-duration: 3s;
+    transform: scale(2);
+    transition-timing-function: ease-in, ease-out, ease-in;
+}
+#pieza1:hover
+{
+    transition-duration: 3s;
+   /* transform: scale(0);*/
+   opacity: 0;
+    transition-timing-function: ease-in, ease-out, ease-in;
+}
+#capa2:hover
+{
+    transition-duration: 3s;
+    transform: translate(100%);
+    transition-timing-function: ease-in, ease-out, ease-in;
+    background-image: url('img/Capa2Modify.png');
+}
+
+#capa6:hover
+{
+    transition-duration: 6s;
+    transform-origin: right top;
+    transform: scale(0.1);
+}
+
+.fila3:hover #capa3
+{
+    transform: rotate(-180deg);
+    transition-timing-function: ease-in, ease-out, ease-in;
+}
+.fila3:hover #capa4
+{
+
+    transform: scale(1.2);      
+}
+
+#capa3,#capa4
+
+{
+    transition: all 3s;
+}

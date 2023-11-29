@@ -1,0 +1,57 @@
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .fondo
+    {
+        position: relative;
+        top: 0;
+        background: url(img/fondo.webp) no-repeat;
+        width: 1600px;
+        height: 1011px;
+        border: 1px solid black;
+        scale: 0.8;
+    }
+
+    .barco
+    {
+        position: absolute;
+        
+        scale: 0.5;
+        bottom: 0;
+        animation: movimiento 12s infinite;
+    }
+    .remo
+    {
+        position: absolute;
+        width: 100px;
+        bottom: 80px;
+        left: 240px;
+        animation: remar 2s  infinite,movimientoRemo 12s infinite;
+        transform: rotate(0deg);
+    }
+    @keyframes movimiento {
+        0%{
+            
+        }
+        100%{
+            transform: translate(1000px, 0px);
+        }
+    }
+    @keyframes movimientoRemo {
+        0%{
+            
+        }
+        100%{
+            transform: translate(600px, 0px);
+        }
+    }
+    @keyframes remar {
+        0%{
+            
+        }
+        100%{
+            transform: rotate(20deg);
+            
+        }
+    }

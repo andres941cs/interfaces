@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-xl-none">
+            <!-- VERSION MOVIL Y TABLET -->
+            <div id="header" class="d-flex justify-content-between ms-2 me-2">
+                <img id="logo" src="img/instagram.svg" alt="icono" width="50" />
+                <img id="logo_texto" src="img/texto.png" alt="Instagram" width="125px" />
+                <input class="d-none" type="search" placeholder="Buscar" />
+                <img id="buscar" src="img/buscar.svg" width="45" />
+            </div>
+
+            <div id="content">
+                <img class="d-block m-auto w-100" id="img_main" src="img/rosalia.jpeg" alt="" />
+                <div id="main">
+                    <div id="image_options" class="ms-3 me-3 mt-2">
+                        <div id="icon_options" class="d-flex justify-content-between">
+                            <div id="pack1">
+                                <img src="img/heart-regular.svg" alt="" width="20px" />
+                                <img src="img/comment-regular.svg" alt="" width="20px" />
+                                <img src="img/paper-plane-regular.svg" alt="" width="20px" />
+                            </div>
+                            <img src="img/bookmark-regular.svg" alt="" width="15px" />
+                        </div>
+                        <div id="data_likes">1.423.352 Me gusta</div>
+                        <div id="date" class="text-secondary">10 de enero</div>
+                    </div>
+                    <div id="login_message" class="ms-3">
+                        <span class="text-secondary"><a class="text-decoration-none" href="">Iniciar sesion</a> para
+                            indicar que te gusta o comentar</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center ms-3 mt-3" id="profile">
+                        <div id="user-profile" class="me-3">
+                            <img class="me-2" id="foto_perfil" src="img/rosalia.jpeg" alt="" width="50px"
+                                height="50px" />
+                            <div class="d-flex flex-column" id="description_profile">
+                                <div class="">
+                                    rosalia.vt
+                                    <img src="img/checkIcon.png" alt="" width="12px" />
+                                    •Seguir
+                                </div>
+                                <div>Los Angeles, California</div>
+                            </div>
+                        </div>
+                        <img class="me-3" id="opciones" src="img/ellipsis-solid.svg" alt="opciones" width="20px" />
+                    </div>
+                    <!-- Comentario propio -->
+                    <div class="comentario d-flex justify-content-between ms-3 me-3 align-items-center">
+                        <img id="foto_perfil" src="img/rosalia.jpeg" alt="" width="50px" height="50px" />
+                        <div id="description_profile" class="ms-2">
+                            <titulo>rosalia.vt
+                                <img src="img/checkIcon.png" alt="" width="12px" />
+                            </titulo>
+                            <span class="texto_comentario">Perfoming en L.A this weekend</span>
+                            <div class="text-secondary">4 Sem</div>
+                        </div>
+                        <img id="opciones" src="img/ellipsis-solid.svg" alt="opciones" width="20px" />
+                    </div>
+                    <div class="comentario d-flex align-items-center">
+                        <img class="ms-3" id="foto_comentario" src="img/rosalia.jpeg" alt="" width="50px"
+                            height="50px" />
+                        <div class="ms-2" id="description_profile">
+                            <titulo>rosalia.vt<span class="texto_comentario">♥ ♥ ♥</span>
+                            </titulo>
+                            <div class="text-secondary">
+                                1sem
+                                <a class="text-secondary text-decoration-none fw-bold" href="">Responder</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none d-xl-block">
+            <!-- VERSION ESCRITORIO -->
+            <div id="header-desktop" class="row justify-content-center align-items-center">
+                <div class="col d-flex justify-content-center">
+                    <img class="border-2 border-end border-dark p-2 m-2" src="img/instagram.svg" alt="icono"
+                        width="50" />
+                    <!-- <svg aria-label="Instagram" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24"><title>Instagram</title><path d="M12 2.982c2.937 0 3.285.011 4.445.064a6.087 6.087 0 0 1 2.042.379 3.408 3.408 0 0 1 1.265.823 3.408 3.408 0 0 1 .823 1.265 6.087 6.087 0 0 1 .379 2.042c.053 1.16.064 1.508.064 4.445s-.011 3.285-.064 4.445a6.087 6.087 0 0 1-.379 2.042 3.643 3.643 0 0 1-2.088 2.088 6.087 6.087 0 0 1-2.042.379c-1.16.053-1.508.064-4.445.064s-3.285-.011-4.445-.064a6.087 6.087 0 0 1-2.043-.379 3.408 3.408 0 0 1-1.264-.823 3.408 3.408 0 0 1-.823-1.265 6.087 6.087 0 0 1-.379-2.042c-.053-1.16-.064-1.508-.064-4.445s.011-3.285.064-4.445a6.087 6.087 0 0 1 .379-2.042 3.408 3.408 0 0 1 .823-1.265 3.408 3.408 0 0 1 1.265-.823 6.087 6.087 0 0 1 2.042-.379c1.16-.053 1.508-.064 4.445-.064M12 1c-2.987 0-3.362.013-4.535.066a8.074 8.074 0 0 0-2.67.511 5.392 5.392 0 0 0-1.949 1.27 5.392 5.392 0 0 0-1.269 1.948 8.074 8.074 0 0 0-.51 2.67C1.012 8.638 1 9.013 1 12s.013 3.362.066 4.535a8.074 8.074 0 0 0 .511 2.67 5.392 5.392 0 0 0 1.27 1.949 5.392 5.392 0 0 0 1.948 1.269 8.074 8.074 0 0 0 2.67.51C8.638 22.988 9.013 23 12 23s3.362-.013 4.535-.066a8.074 8.074 0 0 0 2.67-.511 5.625 5.625 0 0 0 3.218-3.218 8.074 8.074 0 0 0 .51-2.67C22.988 15.362 23 14.987 23 12s-.013-3.362-.066-4.535a8.074 8.074 0 0 0-.511-2.67 5.392 5.392 0 0 0-1.27-1.949 5.392 5.392 0 0 0-1.948-1.269 8.074 8.074 0 0 0-2.67-.51C15.362 1.012 14.987 1 12 1Zm0 5.351A5.649 5.649 0 1 0 17.649 12 5.649 5.649 0 0 0 12 6.351Zm0 9.316A3.667 3.667 0 1 1 15.667 12 3.667 3.667 0 0 1 12 15.667Zm5.872-10.859a1.32 1.32 0 1 0 1.32 1.32 1.32 1.32 0 0 0-1.32-1.32Z"></path></svg> -->
+                    <img id="logo_texto" src="img/texto.png" alt="Instagram" width="125px" />
+                </div>
+                <div class="col">
+                    <svg aria-label="Búsqueda" class="x1lliihq x1n2onr6 x1cp0k07" fill="currentColor" height="16"
+                        role="img" viewBox="0 0 24 24" width="16">
+                        <title>Búsqueda</title>
+                        <path d="M19 10.5A8.5 8.5 0 1 1 10.5 2a8.5 8.5 0 0 1 8.5 8.5Z" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                        <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" x1="16.511" x2="22" y1="16.511" y2="22"></line>
+                    </svg>
+                    <input id="search_input" type="search" placeholder="Buscar" />
+                </div>
+            </div>
+
+            <div class="container fluid mt-2">
+                <div class="d-flex justify-content-center">
+                    <img class="d-block" id="img_main" src="img/rosalia.jpeg" alt="" width="380px" />
+                    <div class="d-flex flex-column position-relative border border-ligth">
+                        <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
+                            <div id="user-profile" class="me-3">
+                                <img class="me-2" id="foto_perfil" src="img/rosalia.jpeg" alt="" width="50px"
+                                    height="50px" />
+                                <div class="d-flex flex-column" id="description_profile">
+                                    <div class="">
+                                        rosalia.vt
+                                        <img src="img/checkIcon.png" alt="" width="12px" />
+                                        •Seguir
+                                    </div>
+                                    <div>Los Angeles, California</div>
+                                </div>
+                            </div>
+                            <img src="img/ellipsis-solid.svg" alt="opciones" width="20px" />
+                        </div>
+                        <!-- Comentario propio -->
+                        <div class="comentario d-flex justify-content-between p-3 align-items-center">
+                            <img id="foto_perfil" src="img/rosalia.jpeg" alt="" width="50px" height="50px" />
+                            <div id="description_profile" class="ms-2">
+                                <titulo>rosalia.vt
+                                    <img src="img/checkIcon.png" alt="" width="12px" />
+                                </titulo>
+                                <span class="texto_comentario">Perfoming en L.A this weekend</span>
+                                <div class="text-secondary">4 Sem</div>
+                            </div>
+                            <img id="opciones" src="img/ellipsis-solid.svg" alt="opciones" width="20px" />
+                        </div>
+                        <div class="comentario d-flex align-items-center">
+                            <img class="ms-3" id="foto_comentario" src="img/rosalia.jpeg" alt="" width="50px"
+                                height="50px" />
+                            <div class="ms-2" id="description_profile">
+                                <titulo>rosalia.vt<span class="texto_comentario">♥ ♥ ♥</span>
+                                </titulo>
+                                <div class="text-secondary">
+                                    1sem
+                                    <a class="text-secondary text-decoration-none fw-bold" href="">Responder</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-absolute bottom-0 w-100">
+                            <div id="image_options" class="mt-2 border-bottom border-top p-3">
+                                <div id="icon_options" class="d-flex justify-content-between">
+                                    <div id="pack1">
+                                        <img src="img/heart-regular.svg" alt="" width="20px" />
+                                        <img src="img/comment-regular.svg" alt="" width="20px" />
+                                        <img src="img/paper-plane-regular.svg" alt="" width="20px" />
+                                    </div>
+                                    <img src="img/bookmark-regular.svg" alt="" width="15px" />
+                                </div>
+                                <div id="data_likes">1.423.352 Me gusta</div>
+                                <div id="date" class="text-secondary">10 de enero</div>
+                            </div>
+                            <div id="login_message" class="p-3">
+                                <span class="text-secondary"><a class="text-decoration-none" href="">Iniciar sesion</a>
+                                    para indicar que te gusta o comentar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

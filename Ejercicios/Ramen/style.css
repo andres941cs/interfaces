@@ -1,0 +1,72 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#sarten
+{
+    z-index: 1;
+}
+#mango
+{
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 500px;/*600 650*/
+    scale: 0.4;
+}
+#fogata
+{
+    position: absolute;
+    margin-top: 145px;
+    scale: 0.6;
+}
+#fuego
+{
+    display: none;
+    position: absolute;
+    margin-top: -240px;
+    scale: 0.55;
+
+}
+.comida
+{
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 46px;
+}
+#comida-cocida
+{
+   
+}
+#comida-quemada
+{
+
+}
+#sarten:hover
+{
+    
+}
+
+body:hover #fuego
+{
+    display: block;
+    z-index: -1;
+}
+
+body:hover #comida-cocida
+{
+    transition-delay: 10s;
+    
+    opacity: 0;
+}
+
+body:hover #comida
+{
+    transition-delay: 5s;
+    
+    opacity: 0;
+}
+

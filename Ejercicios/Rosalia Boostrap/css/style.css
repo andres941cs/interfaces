@@ -1,0 +1,14 @@
+
+
+#foto_perfil
+{
+    border-radius: 50%;
+    border: red 1px solid;
+    padding: 2px;
+    float: left;
+}
+#foto_comentario
+{
+    border-radius: 50%;
+    float: left;
+}

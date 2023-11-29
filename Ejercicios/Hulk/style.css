@@ -1,0 +1,87 @@
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .fondo
+    {
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    .suelo
+    {
+        position: absolute;
+        width: 100vw;
+        height: 15vh;
+        background-color: black;
+        bottom: 0;
+    }
+    .coche
+    {
+        position: absolute;
+        width: 400px;
+        bottom: 12vh;
+        animation: movimientoCoche 5s forwards,cocheAplastado 2s 5s,girarCoche 3s 6s;
+    }
+    .bruce
+    {
+        position: absolute;
+        width: 60px;
+        bottom: 14vh;
+        transform: translateX(960px);
+        animation: desaparecer 1s 4s forwards;
+    }
+    .hulk
+    {
+        position: absolute;
+        width: 300px;
+        bottom: 14vh;
+        /*transform: translateX(850px);*/
+        left: 850px;
+        opacity: 0;
+        animation: transformacion 3s 4s,girar 3s 5s;
+    }
+    @keyframes movimientoCoche {
+        to {
+            transform: translateX(600px);
+          }
+    }
+    @keyframes desaparecer {
+        to {
+            opacity: 0;
+          }
+    }
+    @keyframes transformacion {
+        to {
+            opacity: 1;
+          }
+    }
+    @keyframes girar {
+        0%{
+            
+        }
+        100%{
+            transform: rotate(50deg);
+            left: 700px;
+        }
+    }
+    @keyframes cocheAplastado {
+        20%{
+            transform: translateX(600px) scaleX(0.5);
+            
+        }
+
+        100%{
+            /*transform: scaleX(0.5);*/
+            transform: translateY(-600px) scaleX(0.5);
+            
+        }
+    }
+
+    @keyframes girarCoche {
+        100%{
+            transform: rotate(180deg);
+            /*transform: translateY(-600px) scaleX(0.5);*/
+        }
+    }

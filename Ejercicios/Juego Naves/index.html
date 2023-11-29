@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Naves Espaciales</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+</head>
+<body>
+    <div id="main-container">
+        <div id="header-container">
+            <div class="button-panel">
+                <button id="shipButton"  type="button"><span class="material-symbols-outlined">rocket</span><span class="spanButton">Nave</span></button>
+                <button id="alienButton"><span class="material-symbols-outlined">coronavirus</span><span class="spanButton">Aliens</span></button>
+                <button id="engineButton"><span class="material-symbols-outlined">heat_pump</span><span class="spanButton">Motor</span></button>
+                <button id="levelButton"><span class="material-symbols-outlined">stacks</span><span class="spanButton">LVLs</span></button>
+            </div>      
+            <div id="meters" class="classBody">
+                <div class="classHead">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rocket" viewBox="0 0 16 16">
+                        <path d="M8 8c.828 0 1.5-.895 1.5-2S8.828 4 8 4s-1.5.895-1.5 2S7.172 8 8 8Z"/>
+                        <path d="M11.953 8.81c-.195-3.388-.968-5.507-1.777-6.819C9.707 1.233 9.23.751 8.857.454a3.495 3.495 0 0 0-.463-.315A2.19 2.19 0 0 0 8.25.064.546.546 0 0 0 8 0a.549.549 0 0 0-.266.073 2.312 2.312 0 0 0-.142.08 3.67 3.67 0 0 0-.459.33c-.37.308-.844.803-1.31 1.57-.805 1.322-1.577 3.433-1.774 6.756l-1.497 1.826-.004.005A2.5 2.5 0 0 0 2 12.202V15.5a.5.5 0 0 0 .9.3l1.125-1.5c.166-.222.42-.4.752-.57.214-.108.414-.192.625-.281l.198-.084c.7.428 1.55.635 2.4.635.85 0 1.7-.207 2.4-.635.067.03.132.056.196.083.213.09.413.174.627.282.332.17.586.348.752.57l1.125 1.5a.5.5 0 0 0 .9-.3v-3.298a2.5 2.5 0 0 0-.548-1.562l-1.499-1.83ZM12 10.445v.055c0 .866-.284 1.585-.75 2.14.146.064.292.13.425.199.39.197.8.46 1.1.86L13 14v-1.798a1.5 1.5 0 0 0-.327-.935L12 10.445ZM4.75 12.64C4.284 12.085 4 11.366 4 10.5v-.054l-.673.82a1.5 1.5 0 0 0-.327.936V14l.225-.3c.3-.4.71-.664 1.1-.861.133-.068.279-.135.425-.199ZM8.009 1.073c.063.04.14.094.226.163.284.226.683.621 1.09 1.28C10.137 3.836 11 6.237 11 10.5c0 .858-.374 1.48-.943 1.893C9.517 12.786 8.781 13 8 13c-.781 0-1.517-.214-2.057-.607C5.373 11.979 5 11.358 5 10.5c0-4.182.86-6.586 1.677-7.928.409-.67.81-1.082 1.096-1.32.09-.076.17-.135.236-.18Z"/>
+                        <path d="M9.479 14.361c-.48.093-.98.139-1.479.139-.5 0-.999-.046-1.479-.139L7.6 15.8a.5.5 0 0 0 .8 0l1.079-1.439Z"/>
+                    </svg>
+                    <!-- <span class="material-symbols-outlined">rocket</span> -->
+                    <span>Nave</span>
+                </div>
+                <div class="body-data">
+                    <div id="survivor">
+                        <label>Supervivientes:</label>
+                        <meter id="survivor-meter" min="0" max="100"></meter>
+                    </div>
+                    <div id="energy">
+                        <label>Energía:</label>
+                        <meter id="energy-meter" min="0" max="100"></meter>
+                    </div>
+                    <div id="damage">
+                        <label>Integridad del casco:</label>
+                        <meter id="damage-meter" min="0" max="100"></meter>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="alien-interface" class="classBody">
+                <!-- <div class="head-data">
+                    <span class="material-symbols-outlined">coronavirus</span><span>Aliens</span>
+                </div> -->
+            </div>
+            <div id="level-interface" class="classBody">
+                <!-- <div class="head-data">
+                    <span class="material-symbols-outlined">coronavirus</span><span>Aliens</span>
+                </div> -->
+            </div>
+
+            <div id="timer">
+                <input type="time" id="input-timer" name="input-timer"><br>
+            </div>
+
+            <div class="button-panel">
+                <button type="button" onclick="mostrarDivInterface('shield-interface')"><span class="material-symbols-outlined">shield</span><span class="spanButton">Escudo</span></button>
+                <button type="button" onclick="mostrarDivInterface('propulsor-interface')"><span class="material-symbols-outlined">mode_fan</span><span class="spanButton">Propulsor</span></button>
+                <button type="button" onclick="mostrarDivInterface('arma-interface')"><span class="material-symbols-outlined">swords</span><span class="spanButton">Arma</span></button>
+                <!-- <button type="button" onclick="mostrarDivInterface('tripulacion-interface')"><span class="material-symbols-outlined">groups</span><span class="spanButton">Tripulación</span></button> -->
+                <button type="button" onclick="mostrarDivInterface('motor-salto-interface')"><span class="material-symbols-outlined">speed</span><span class="spanButton">Salto</span></button>
+            </div>
+        </div>
+        <!-- <p class="maquina-escribir">Seleccina una galaxia: <span class="cursor">|</span></p> -->
+        <div id="body-container"> 
+            <!-- DIV EXPLORER >-->
+            <div id="game-exploration">
+                <!-- <div class="image-container">
+                    <img class="imgGate" src="img/gate-zeta.gif" alt="" width="50%">
+                </div> -->
+            </div>
+            <!-- DIV GAME -->
+            <div id="game-container">
+                <div id="grid" class="grid">
+                    <!-- Cuadrícula espacial -->
+
+                    <!-- <div class="messageHover">
+                        <h3>Posibles recompensas</h3>
+                        <p>Energía: 5-25</p>
+                        <p>Chatarra: 5-25</p>
+                        <p>Supervivientes: 5-25</p>
+                        <h3>Posibles Enemigos</h3>
+                        <p>Numero enemigos: 1-5</p>
+                    </div> -->
+                </div>
+            </div>
+            <div id="interfaces" class="classBody">
+                <!-- Interfaz del Escudo -->
+            <form id="shield-interface" style="display: none;">
+                <div class="classHead">
+                    <span class="material-symbols-outlined">shield</span>
+                    Interfaz del Escudo
+                </div>
+
+                <div class="body-data">
+                    <label for="level-shield" style="display: block;">Level:</label>
+                    <div class="center-content">
+                        <button class="buttonHexagonal" type="button" onclick="equalAllShields()">+</button>
+                        <input type="number" id="level-shield" min="0" max="10" readonly style="display: inline;" >
+                        <button class="buttonHexagonal" type="button" >-</button>
+                    </div>
+                    <div class="button-equals">
+                        <button id="onShieldButton" class="on" type="button">ON</button>
+                        <button id="offShieldButton" class="off" type="button">OFF</button>
+                    </div>
+                    <button type="button" onclick="ocultarTodasLasInterfaces()">Volver</button>
+                </div>
+
+            </form>
+
+            <!-- Interfaz del Propulsor -->
+            <form id="propulsor-interface" style="display: none;">
+                <div class="classHead">
+                    <span class="material-symbols-outlined">mode_fan</span>
+                    Interfaz del Propulsor
+                </div>
+
+                <div class="body-data">
+                    <label >Dirección:</label>
+                    <div class="button-panel" style="justify-content: center;">
+                        <button id="leftButton" type="button"><span class="material-symbols-outlined">rotate_left</span></button>
+                        <button id="rightButton" type="button"><span class="material-symbols-outlined">rotate_right</span></button>
+                    </div>
+                    <br>
+                    <button type="button" onclick="ocultarTodasLasInterfaces()">Volver</button>
+                </div>
+            </form>
+            <!-- Interfaz del Arma -->
+            <form id="arma-interface" style="display: none;">
+                <div class="classHead">
+                    <span class="material-symbols-outlined">swords</span>Interfaz del Arma
+                </div>
+
+                <div class="body-data">              
+                    <input type="radio" id="weapon1" name="weapon">
+                    <input type="radio" id="weapon2" name="weapon">
+                    <span>Arma Seleccionada:</span>
+                    <div id="weaponSelect">Laser</div>
+                    <button  type="button" onclick="changeWeapon()">Cambiar Arma</button>
+                    <span>Municion:</span>
+                    <div id="ammunition"><meter id="ammunition-meter" min="0" max="10" ></meter>
+                </div>
+
+                <div class="button-panel">
+                    <button id="button-shoot"  type="button" onclick="shootWeapon(this)">Disparar</button>
+                    <button type="button" onclick="reloadWeapon()">Recargar</button><br>
+                </div>
+                    
+                    <button type="button" onclick="ocultarTodasLasInterfaces()">Volver</button>
+                </div>
+            </form>
+
+            <!-- Interfaz del Motor de Salto -->
+            <form id="motor-salto-interface" style="display: none;">
+                <div class="classHead">
+                    <span class="material-symbols-outlined">speed</span>Interfaz del Motor de Salto
+                </div>
+                
+                <div class="body-data">
+                    <div id="engine-cooling">
+                        <label for="coolingRange">Refrigerar motor:</label>
+                        <input type="range" id="coolingRange" min="0" max="10">
+                        <div class="center-content">    
+                            <button class="buttonHexagonal" type="button" onclick="decrementValue()">-</button>
+                            <span id="engine-cooling-number"></span>
+                            <button class="buttonHexagonal" type="button" onclick="incrementValue()">+</button>
+                        </div>
+                    </div>
+                    
+                    <button type="button" onclick="jumpNextStage()">SALTAR</button>
+                </div>
+                
+            </form>
+            </div>
+        </div>
+        
+        <div id="footer-container">
+            <div id="engineDiv" class="classBody">
+                <div class="classHead">
+                    <span class="material-symbols-outlined">heat_pump</span>Engine
+                </div>
+                <div class="body-data">
+                    <div id="progress">
+                        <label>Recalentamiento del motor de salto:</label>
+                        <progress id="jump-progress" max="100" value="100"></progress>
+                    </div>
+                    <button id="emergencyButton" class="off" type="button" onclick="emergencyJump()">SALTO DE EMERGENCIA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MODALES-->
+    <div id="mensajeOrientacion">
+        <div class="modal-contenido">
+            <div class="head-data" style="opacity: 1;">
+                Aviso</div>
+            <p>Cambia de orientacion para jugar</p>
+        </div>
+    </div>
+    <script src="js/gestorNiveles.js"></script>
+    <script src="js/cofre.js"></script>
+    <script src="js/portal.js"></script>
+    <script src="js/nave.js"></script>
+    <script src="js/alien.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
