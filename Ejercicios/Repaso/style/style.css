@@ -32,7 +32,7 @@ h4
 
 ul
 {
-    list-style-image: url("/img/bullet.png");
+    list-style-image: url("../img/bullet.png");
 }
 ul a
 {
@@ -64,7 +64,7 @@ ul a
 }
 #banner
 {
-    background: transparent url("/img/banner.jpg"); border: 10px solid #DDD;
+    background: transparent url("../img/banner.jpg"); border: 10px solid #DDD;
     height: 180px;
     margin: 0 10px 10px 10px;
 }
