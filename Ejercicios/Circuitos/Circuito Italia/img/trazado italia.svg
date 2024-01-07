@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="884" height="497" viewBox="0 0 884 497">
+  <defs>
+    <clipPath id="clip-_15-italia">
+      <rect width="884" height="497"/>
+    </clipPath>
+  </defs>
+  <g id="_15-italia" data-name="15-italia" clip-path="url(#clip-_15-italia)">
+    <rect width="884" height="497" fill="#fff" fill-opacity="0"/>
+    <g id="Path-42" transform="translate(-2 33)">
+      <path id="Trazado_25" data-name="Trazado 25" d="M651,391l-288-3q-6.422-.141-6-6,1.188-10.973-11-6-35.082,11.539-48,13-45.726,6.072-86-14-33.747-18.042-51-82L143,181q.6-13.838-7-12-8.42.935-9-5,.739-7.369-4-15L93,81Q81.71,54.311,114,46l58-10q19.576-5.095,28,10l50,73q17.436,26.479,32,39L410,280q2.227,6.811,15,4,18.867-6.691,37,9,4.407,8.928,20,9l288,6q23.477-3.869,29,22c-.75,18.563-7.571,36.6-45,52Q709.8,392.688,651,391Z" fill="none" stroke="#383838" stroke-width="20"/>
+      <path id="Trazado_26" data-name="Trazado 26" d="M651,391l-288-3q-6.422-.141-6-6,1.188-10.973-11-6-35.082,11.539-48,13-45.726,6.072-86-14-33.747-18.042-51-82L143,181q.6-13.838-7-12-8.42.935-9-5,.739-7.369-4-15L93,81Q81.71,54.311,114,46l58-10q19.576-5.095,28,10l50,73q17.436,26.479,32,39L410,280q2.227,6.811,15,4,18.867-6.691,37,9,4.407,8.928,20,9l288,6q23.477-3.869,29,22c-.75,18.563-7.571,36.6-45,52Q709.8,392.688,651,391Z" fill="none" stroke="#a0a0a0" stroke-width="4"/>
+    </g>
+    <g id="Bandera-meta" transform="translate(680 445)">
+      <rect id="Rectangle" width="21" height="13" transform="translate(-0.5 -0.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <rect id="Rectangle-2" data-name="Rectangle" width="4" height="4" transform="translate(0 8)"/>
+      <rect id="Rectangle-3" data-name="Rectangle" width="4" height="4" transform="translate(4 4)"/>
+      <rect id="Rectangle-4" data-name="Rectangle" width="4" height="4"/>
+      <rect id="Rectangle-5" data-name="Rectangle" width="4" height="4" transform="translate(0 4)" fill="#f0f0f0"/>
+      <rect id="Rectangle-6" data-name="Rectangle" width="4" height="4" transform="translate(16 8)"/>
+      <rect id="Rectangle-7" data-name="Rectangle" width="4" height="4" transform="translate(16)"/>
+      <rect id="Rectangle-8" data-name="Rectangle" width="4" height="4" transform="translate(16 4)" fill="#f0f0f0"/>
+      <rect id="Rectangle-9" data-name="Rectangle" width="4" height="4" transform="translate(4)" fill="#f0f0f0"/>
+      <rect id="Rectangle-10" data-name="Rectangle" width="4" height="4" transform="translate(4 8)" fill="#f0f0f0"/>
+      <rect id="Rectangle-11" data-name="Rectangle" width="4" height="4" transform="translate(8 8)"/>
+      <rect id="Rectangle-12" data-name="Rectangle" width="4" height="4" transform="translate(12 4)"/>
+      <rect id="Rectangle-13" data-name="Rectangle" width="4" height="4" transform="translate(8)"/>
+      <rect id="Rectangle-14" data-name="Rectangle" width="4" height="4" transform="translate(8 4)" fill="#f0f0f0"/>
+      <rect id="Rectangle-15" data-name="Rectangle" width="4" height="4" transform="translate(12)" fill="#f0f0f0"/>
+      <rect id="Rectangle-16" data-name="Rectangle" width="4" height="4" transform="translate(12 8)" fill="#f0f0f0"/>
+    </g>
+    <g id="Sentido" transform="translate(617 447)">
+      <path id="Path" d="M20.476,0,14,6.477l6.476,6.477" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" fill-rule="evenodd"/>
+      <path id="Path-2" data-name="Path" d="M13.476,0,7,6.477l6.476,6.477" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" fill-rule="evenodd"/>
+      <path id="Path-3" data-name="Path" d="M6.477,0,0,6.477l6.477,6.477" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" fill-rule="evenodd"/>
+    </g>
+    <g id="Curvas" transform="translate(49 37)">
+      <g id="Número-de-curva" transform="translate(285 398)">
+        <rect id="Rectangle-17" data-name="Rectangle" width="25" height="25" fill="#d0021b"/>
+        <text id="_1" data-name="1" transform="translate(9.336 18)" fill="#fff" font-size="14" font-family="Helvetica"><tspan x="0" y="0">1</tspan></text>
+      </g>
+      <g id="Número-de-curva-2" data-name="Número-de-curva" transform="translate(285 330)">
+        <rect id="Rectangle-18" data-name="Rectangle" width="25" height="25" fill="#d0021b"/>
+        <text id="_1-2" data-name="1" transform="translate(8.489 18)" fill="#fff" font-size="14" font-family="Helvetica"><tspan x="0" y="0">2</tspan></text>
+      </g>
+      <g id="Número-de-curva-3" data-name="Número-de-curva" transform="translate(36 158)">
+        <rect id="Rectangle-19" data-name="Rectangle" width="25" height="25" fill="#d0021b"/>
+        <text id="_1-3" data-name="1" transform="translate(8.545 18)" fill="#fff" font-size="14" font-family="Helvetica"><tspan x="0" y="0">5</tspan></text>
+      </g>
+      <g id="Número-de-curva-4" data-name="Número-de-curva" transform="translate(0 31)">
+        <rect id="Rectangle-20" data-name="Rectangle" width="25" height="25" fill="#d0021b"/>
+        <text id="_1-4" data-name="1" transform="translate(8.258 18)" fill="#fff" font-size="14" font-family="Helvetica"><tspan x="0" y="0">6</tspan></text>
+      </g>
+      <g id="Número-de-curva-5" data-name="Número-de-curva" transform="translate(153)">
+        <rect id="Rectangle-21" data-name="Rectangle" width="25" height="25" fill="#d0021b"/>
+        <text id="_1-5" data-name="1" transform="translate(8.545 18)" fill="#fff" font-size="14" font-family="Helvetica"><tspan x="0" y="0">7</tspan></text>
+      </g>
+      <g id="Número-de-curva-6" data-name="Número-de-curva" transform="translate(337 297)">
+        <rect id="Rectangle-22" data-name="Rectangle" width="25" height="25" fill="#d0021b"/>
+        <text id="_1-6" data-name="1" transform="translate(8.293 18)" fill="#fff" font-size="14" font-family="Helvetica"><tspan x="0" y="0">8</tspan></text>
+      </g>
+      <g id="Número-de-curva-7" data-name="Número-de-curva" transform="translate(387 235)">
+        <rect id="Rectangle-23" data-name="Rectangle" width="25" height="25" fill="#d0021b"/>
+        <text id="_1-7" data-name="1" transform="translate(8.265 18)" fill="#fff" font-size="14" font-family="Helvetica"><tspan x="0" y="0">9</tspan></text>
+      </g>
+      <g id="Número-de-curva-8" data-name="Número-de-curva" transform="translate(403 313)">
+        <rect id="Rectangle-24" data-name="Rectangle" width="25" height="25" fill="#d0021b"/>
+        <text id="_1-8" data-name="1" transform="translate(4.968 18)" fill="#fff" font-size="14" font-family="Helvetica"><tspan x="0" y="0">10</tspan></text>
+      </g>
+      <g id="Número-de-curva-9" data-name="Número-de-curva" transform="translate(761 288)">
+        <rect id="Rectangle-25" data-name="Rectangle" width="25" height="25" fill="#d0021b"/>
+        <text id="_1-9" data-name="1" transform="translate(6.172 18)" fill="#fff" font-size="14" font-family="Helvetica"><tspan x="0" y="0">11</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,100 @@
+.circuito
+{
+    width: 1024px;
+    height: 576px;
+    position: relative;
+    background-image: url(img/circuito.png);
+}
+
+img
+{
+    position: absolute;
+    width: 100px;
+    left: 80px;
+    bottom: 46px;
+    transform-origin: top;
+    animation: carrera_1 5s forwards, carrera_2 3s 5s forwards,carrera_3 5s 8s forwards,
+    carrera_4 4s 13s forwards,carrera_5 4s 17s forwards,carrera_6 4s 21s forwards;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+img:hover
+{
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+@keyframes carrera_1 {
+    0%{
+
+    }
+    25%{
+        left: 600px;
+    }
+    100%{
+        left: 620px;
+        transform: rotate(-90deg);
+    }
+}
+@keyframes carrera_2 {
+    0%{
+        left: 620px;
+        transform: rotate(-90deg);
+    }
+    20%{
+        bottom: 220px;
+    }
+    100%{
+        bottom: 230px;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes carrera_3 {
+    0%{
+        bottom: 230px;
+        transform: rotate(0deg);
+    }
+    25%{
+        left: 820px;
+    }
+    100%{
+        left: 820px;
+        transform: rotate(-90deg);
+    }
+}
+@keyframes carrera_4 {
+    0%{
+        /* bottom: 230px;
+        transform: rotate(0deg); */
+    }
+    25%{
+        bottom: 330px;
+    }
+    100%{
+        bottom: 325px;
+        left: 800px;
+        transform: rotate(-180deg);
+    }
+}
+@keyframes carrera_5 {
+    0%{
+        /* bottom: 230px;
+        transform: rotate(0deg); */
+    }
+    25%{
+        left: 106px;
+    }
+    100%{
+        left: 106px;
+        transform: rotate(-270deg);
+    }
+}
+
+@keyframes carrera_6 {
+    0%{
+        left: 106x;
+    }
+    100%{
+        bottom: 46px;
+    }
+}

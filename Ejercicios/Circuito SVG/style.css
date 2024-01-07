@@ -1,0 +1,13 @@
+svg {
+    position: absolute;
+    height: 498px;
+    top: 10px;
+    left: -18px;
+}
+
+.coche {
+    position: absolute;
+    width: 44px;
+    left: 355px;
+    top: 398px;
+}

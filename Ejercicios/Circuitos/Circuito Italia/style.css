@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    position: absolute;
+}
+svg {
+    position: absolute;
+    left: -30px;
+    height: 500px;
+}
